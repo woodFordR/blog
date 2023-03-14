@@ -1,0 +1,12 @@
+title: Woodford's Den
+email: adam@kaewell.com
+description: >-
+  A blog about a rubyist & his chocolate lab.
+baseurl: ""
+url: "https://blog.woodford.tbd"
+twitter_username: akaewell
+github_username:  woodFordR
+
+theme: minima
+plugins:
+  - jekyll-feed

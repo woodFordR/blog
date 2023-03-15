@@ -253,3 +253,24 @@
     }
   }
 }
+
+// svg & lottie
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(2, 6fr);
+  border-bottom: 2px solid $grey-color-light;
+  margin-bottom: 30px;
+
+    .page-heading {
+      font-weight: 600;
+      margin-bottom: 0;
+      place-self: center end;
+    }
+
+    #coffee {
+      max-height: 30%;
+      max-width: 30%;
+      place-self: start;
+    }
+}

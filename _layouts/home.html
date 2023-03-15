@@ -3,9 +3,22 @@ layout: default
 ---
 
 <div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+  <div id="container">
+    <h1 class="page-heading">{{ site.title }}</h1>
+    <div id="coffee"></div>
+  </div>
+
+
+  <script>
+    var coffee = document.getElementById('coffee');
+    lottie.loadAnimation({
+      container: coffee,
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'lottie/coffee.json'
+    });
+  </script>
 
   {{ content }}
 

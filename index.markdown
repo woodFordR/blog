@@ -1,6 +1,6 @@
 ---
 layout: home
-title: The Den
+title: Home
 list_title: Chocolate Croissants
 ---
 

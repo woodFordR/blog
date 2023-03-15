@@ -24,4 +24,4 @@ motherboard. I created a boot usb drive for ubuntu server but
 I still need software to upgrade the bios on my list of todos. 
 More updates to follow!
 
-![woodford1](/assets/woodford1.jpg)
+![woodford1](/img/woodford1.jpg)

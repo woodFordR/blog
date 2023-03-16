@@ -1,6 +1,8 @@
 /**
  * Site header
  */
+ @use 'sass:math';
+
  .site-header {
   border-top: 5px solid $brand-color;
   border-bottom: 1px solid $brand-color;

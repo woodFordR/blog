@@ -2,8 +2,8 @@
  * Site header
  */
  .site-header {
-  border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
+  border-top: 5px solid $brand-color;
+  border-bottom: 1px solid $brand-color;
   min-height: $spacing-unit * 1.865;
 
   // Positioning context for the mobile navigation icon
@@ -106,7 +106,7 @@
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $grey-color-light;
+  border-top: 1px solid $brand-color;
   padding: $spacing-unit 0;
 }
 
@@ -256,21 +256,75 @@
 
 // svg & lottie
 
-#container {
+#page-h-container {
   display: grid;
-  grid-template-columns: repeat(2, 6fr);
+  grid-template-columns: repeat(3, 3fr);
   border-bottom: 2px solid $grey-color-light;
   margin-bottom: 30px;
 
     .page-heading {
-      font-weight: 600;
+      font-weight: 500;
       margin-bottom: 0;
       place-self: center end;
     }
 
-    #coffee {
-      max-height: 30%;
-      max-width: 30%;
-      place-self: start;
+    #coffee-container {
+      place-self: top start;
+      display: flex;
+      flex-wrap: wrap;
+
+      #coffee {
+        max-height: 90%;
+        max-width: 40%;    
+      }
     }
+}
+
+#content-container {
+  margin-bottom: 30px;
+}
+
+#post-list-h-container {
+  padding: 20px 0 20px 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border-top: 2px solid $grey-color-light;
+
+    .post-list-heading {
+      margin-bottom: 0;
+      place-self: center end;
+      border-bottom: 2px solid $brand-color;
+    }
+    
+    .post-list-heading:after {
+      grid-column: 2;
+      border-right: 2px solid $brand-color;
+    }
+}
+
+.post-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  margin-bottom: 30px;
+
+  .paws {
+    grid-column: span 2;
+    place-self: center end;
+    max-height: 100%;
+    max-width: 60%;
+    border-bottom: 2px solid $brand-color;
+  }
+
+  .inner-post-container {
+    grid-column: span 2;
+    display: inline-grid;
+    grid-auto-flow: row;
+    border-bottom: 2px solid $brand-color;
+    .post-meta {
+      place-self: center start;
+    }
+    .post-link {
+      place-self: center start;
+    }
+  }
 }

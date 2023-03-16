@@ -3,45 +3,68 @@ layout: default
 ---
 
 <div class="home">
-  <div id="container">
+  <div id="page-h-container">
     <h1 class="page-heading">{{ site.title }}</h1>
-    <div id="coffee"></div>
+    <div id="coffee-container">
+      <div id="coffee"></div>
+    </div>
   </div>
 
-
-  <script>
-    var coffee = document.getElementById('coffee');
-    lottie.loadAnimation({
-      container: coffee,
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: 'lottie/coffee.json'
-    });
-  </script>
-
-  {{ content }}
+  <div id="content-container">
+    {{ content }}
+  </div>
 
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <div id="post-list-h-container">
+      <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    </div>
     <ul class="post-list">
       {%- for post in site.posts -%}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
+        <div class="post-container">
+          <div class="paws"></div>
+          <div class="inner-post-container">
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+            <h3>
+              <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+              </a>
+            </h3>
+            {%- if site.show_excerpts -%}
+              {{ post.excerpt }}
+            {%- endif -%}
+          </div>
+        </div>
       </li>
       {%- endfor -%}
     </ul>
 
     <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    <script>
+      var coffee = document.getElementById('coffee');
+      console.log(coffee);
+      lottie.loadAnimation({
+        container: coffee,
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'lottie/coffee.json'
+      });
+
+      var paws = document.getElementsByClassName("paws")
+      for (let w = 0; w < paws.length; w++) {
+        console.log(paws[w]);
+        lottie.loadAnimation({
+          container: paws[w],
+          renderer: 'svg',
+          loop: true,
+          autoplay: true,
+          path: 'lottie/paws.json'
+        });
+      }
+    </script>
+  
   {%- endif -%}
 
 </div>

@@ -295,7 +295,7 @@
     .post-list-heading {
       margin-bottom: 0;
       place-self: center end;
-      border-bottom: 2px solid $brand-color;
+      border-bottom: 2px solid $grey-color-light;
     }
     
     .post-list-heading:after {
@@ -314,14 +314,14 @@
     place-self: center end;
     max-height: 100%;
     max-width: 60%;
-    border-bottom: 2px solid $brand-color;
+    border-bottom: 2px solid $grey-color-light;
   }
 
   .inner-post-container {
     grid-column: span 2;
     display: inline-grid;
     grid-auto-flow: row;
-    border-bottom: 2px solid $brand-color;
+    border-bottom: 2px solid $grey-color-light;
     .post-meta {
       place-self: center start;
     }

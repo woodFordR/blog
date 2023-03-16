@@ -55,13 +55,14 @@ layout: default
       var paws = document.getElementsByClassName("paws")
       for (let w = 0; w < paws.length; w++) {
         console.log(paws[w]);
-        lottie.loadAnimation({
+        var paw = lottie.loadAnimation({
           container: paws[w],
           renderer: 'svg',
           loop: true,
           autoplay: true,
           path: 'lottie/paws.json'
         });
+        paw.setSpeed(0.5);
       }
     </script>
   

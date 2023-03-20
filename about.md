@@ -9,12 +9,12 @@ permalink: /about/
   - born in Philadelphia, Woodford was born in Virginia
   - golf is life and life is golf
   - enjoy hiking parks & traveling with my wife
-  - love the process % creation of a good cup of coffee
-  - fixing up my house & working on home projects
+  - love the process of a good cup of coffee
+  - fixing up my house & working on tech / software during the week
  
 ### Current Show & Movie Watchlist
 
-<table>
+<table style="margin: 20px;">
   {% for row in site.data.movies %}
     {% if forloop.first %}
       <tr>

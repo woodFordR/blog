@@ -42,27 +42,45 @@ layout: default
 
     <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
     <script>
-      var coffee = document.getElementById('coffee');
-      console.log(coffee);
-      lottie.loadAnimation({
-        container: coffee,
+      var coffeeContainer = document.getElementById('coffee-container');
+      var coffeeSvg = document.getElementById('coffee');
+      var paws = document.getElementsByClassName("paws");
+      var dMenu = 1;
+      var coffeeLottie = lottie.loadAnimation({
+        container: coffeeSvg,
         renderer: 'svg',
         loop: true,
         autoplay: true,
         path: 'lottie/coffee.json'
       });
 
-      var paws = document.getElementsByClassName("paws")
+      coffeeContainer.addEventListener('mouseenter', (tax) => {
+        coffeeLottie.setDirection(-dMenu);
+        coffeeLottie.play({ autoplay: true })
+      });
+      coffeeContainer.addEventListener('mouseleave', (tax) => {
+        coffeeLottie.setDirection(dMenu);
+        coffeeLottie.play({ autoplay: true })
+      });
+
       for (let w = 0; w < paws.length; w++) {
-        console.log(paws[w]);
-        var paw = lottie.loadAnimation({
+        var postContainer = document.querySelector(".post-container").closest("div")
+
+        let paw = lottie.loadAnimation({
           container: paws[w],
           renderer: 'svg',
-          loop: true,
-          autoplay: true,
+          loop: false,
+          autoplay: false,
           path: 'lottie/paws.json'
         });
-        paw.setSpeed(0.5);
+        postContainer.addEventListener('mouseenter', (tax) => {
+          paw.setDirection(dMenu);
+          paw.play();
+        });
+        postContainer.addEventListener('mouseleave', (tax) => {
+          paw.setDirection(-dMenu);
+          paw.play();
+        });
       }
     </script>
   

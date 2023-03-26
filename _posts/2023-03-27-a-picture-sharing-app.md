@@ -37,7 +37,7 @@ is google.
 ### Server Update
 
 I have completed cleaning the computer case and installing all the new hardware I have bargain shopped  
-over the past few months. It is a micro atx size case with some damage to one of the two sata harddrive 
+over the past few months. It is a micro atx case with some damage to one of the two sata harddrive 
 compartments. I decided to cut the metal and smooth out the remaining walls. Below this blurb, you can see 
 spot #1 with a few dents. During the process of removing the old motherboard & cables, I figured out how to 
 rewire the front panel at spot #2. Here are some other spots of interest:
@@ -52,13 +52,11 @@ rewire the front panel at spot #2. Here are some other spots of interest:
   6. `_CMOS_`
 
 After I installed the mb, power, processor & fans, graphics card, ram, HD, etc... I hooked up the power and connected 
-a monitor. Spot #3 is the LED Tuf light that cycles the rainbow of colors. I've read that is normal behavior but need 
-to double check.  When I turned on the computer, the fans powered on for about 1-2 seconds and the powered off.  Nothing 
-else happened. I've double checked all my connections, integrity of the processor & it's sockett, different HDs, and with 
-minimal connections and variables as possible. My next move is to check to see if the case is grounding the motherboard by 
-running it live on a table.  More updates to come!
-
-<!-- TODO fix blockquote, code, img syntax -->
+a monitor. Spot #3 is the LED Tuf light that cycles through a rainbow of colors. I've read this is normal behavior and need  
+to do more testing. When I turned on the computer, the fans powered on for about 1-2 seconds and the powered off. Nothing 
+else happened. I've double checked all my connections, the processor & it's sockett, different HDs, and with 
+the bare minimum required to start outside the case. I only have a few more options before I can 100% declare the motherboard 
+is at fault and broken in some way.  More updates to come!
 
 ---
 

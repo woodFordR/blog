@@ -1,15 +1,19 @@
 ---
 layout: post
 title:  "A picture sharing app"
-date:   2023-03-24 03:00:00 -0500
-categories: app rails devise postgres ruby
+date:   2023-03-27 17:00:00 -0500
+categories: app rails devise postgres server
 ---
 
-I have decided to create an awesome, simple rails app with postgres, css framework 
-tailwindcss, and importmaps for the js imports. 
+I have decided to create a simple rails app with postgres, css framework 
+tailwindcss, and importmaps. Noteworthy gems in my Gemfile:
 
-  - `ruby version 3.2.1`
-  - `rails version 7.0.4`
+  - `ruby "3.2.1"`
+  - `gem "rails", "~> 7.0.4", ">= 7.0.4.3"`
+  - `gem "devise"`
+  - `gem "omniauth-google-oauth2"`
+  - `gem "omniauth-rails_csrf_protection"`
+  - `gem "pg", "~> 1.1"`
 
 I'm hoping to have this done by the end of next week since we will be on vacation 
 trying to use it .. 😎.
@@ -25,15 +29,8 @@ Devise requests application config edits during installation:
   - no-api-required change in `app/views/layouts/application.html.erb`
     - `<p class="notice"><%= flash[:notice] %>`
     - `<p class="error"><%= flash[:error] %></p>`
-The devise docs are organized and easy to navigate. I will be adding the 
-omniauth settings once I design the model layer.
-
----
-
-I was having an issue with setting up psql due to databases, users having 
-capital letters from the name of my application 😒. My favorite commands so far: 
-  - `DROP ROLE ...`
-  - `DROP DATABASE ...`
+The devise docs are organized and easy to navigate. I've added omniauth with the google 
+as a provider.
 
 ---
 

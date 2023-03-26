@@ -29,8 +29,8 @@ Devise requests application config edits during installation:
   - no-api-required change in `app/views/layouts/application.html.erb`
     - `<p class="notice"><%= flash[:notice] %>`
     - `<p class="error"><%= flash[:error] %></p>`
-The devise docs are organized and easy to navigate. I've added omniauth with the google 
-as a provider.
+The devise docs are organized and easy to navigate. I've added omniauth with one provider which 
+is google.
 
 ---
 

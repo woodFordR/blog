@@ -5,7 +5,7 @@ description: >-
 baseurl: ""
 url: "https://blog.woodford.life"
 twitter_username: akaewell
-github_username:  woodFordr
+github_username:  woodFordR
 
 theme: minima
 plugins:

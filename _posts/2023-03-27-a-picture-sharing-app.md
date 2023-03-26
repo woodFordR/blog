@@ -54,9 +54,9 @@ rewire the front panel at spot #2. Here are some other spots of interest:
 After I installed the mb, power, processor & fans, graphics card, ram, HD, etc... I hooked up the power and connected 
 a monitor. Spot #3 is the LED Tuf light that cycles through a rainbow of colors. I've read this is normal behavior and need  
 to do more testing. When I turned on the computer, the fans powered on for about 1-2 seconds and the powered off. Nothing 
-else happened. I've double checked all my connections, the processor & it's sockett, different HDs, and with 
-the bare minimum required to start outside the case. I only have a few more options before I can 100% declare the motherboard 
-is at fault and broken in some way.  More updates to come!
+else happened. I've double checked all my connections, the processor & it's sockett, and different HDs and ram combinations. I 
+also powered the computer with the bare minimum to start outside the case to rule out the case grounding the board. There are only  
+a few more options I can try to narrow down what is at fault. More updates to come!
 
 ---
 

@@ -18,12 +18,12 @@
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
+  color: $text-color;
+  transition: color 1.5s;
+  text-decoration: none;
 
-  &,
-  &:visited {
-    color: $grey-color-dark;
-  }
 }
+
 
 .site-nav {
   float: right;
@@ -39,11 +39,17 @@
 
   .page-link {
     color: $text-color;
+    text-decoration: none;
+    transition: color 1.5s;
     line-height: $base-line-height;
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
       margin-right: 20px;
+    }
+
+    &:hover {
+      color: $link-gold-color;
     }
   }
 
@@ -316,8 +322,12 @@
     border-bottom: 2px solid $grey-color-light;
   }
 
+  .paws path {
+    fill: $link-gold-color;
+  }
+
   .inner-post-container {
-    grid-column: span 2;
+    grid-column: span 3;
     display: inline-grid;
     grid-auto-flow: row;
     border-bottom: 2px solid $grey-color-light;

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A picture sharing app"
-date:   2023-03-27 10:00:00 -0500
+date:   2023-03-27 04:00:00 -0500
 categories: app rails devise postgres server
 ---
 

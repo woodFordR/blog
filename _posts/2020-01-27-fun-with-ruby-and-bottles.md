@@ -22,7 +22,7 @@ _Polymorphism_ is defined as the concept of 2 or more classes having the ability
 
 |MegaMan|BubbleMan|AirMan|QuickMan|HeatMan|WoodMan|MetalMan|FlashMan|CrashMan|
 |----------|-------|---------|--------|--------|---------|---------|---------|
-|![MegaMan](/assets/megaman2/megaman.png)|![BubbleMan](/assets/megaman2/bubbleman.gif)|![AirMan](/assets/megaman2/airman.jpg)|![QuickMan](/assets/megaman2/quickman.png)|![HeatMan](/assets/megaman2/heatman.png)|![WoodMan](/assets/megaman2/woodman.png)|![MetalMan](/assets/megaman2/metalman.jpg)|![FlashMan](/assets/megaman2/flashman.png)|![CrashMan](/assets/megaman2/crashman.png)|
+|![MegaMan](/img/megaman2/megaman.png)|![BubbleMan](/img/megaman2/bubbleman.gif)|![AirMan](/img/megaman2/airman.jpg)|![QuickMan](/img/megaman2/quickman.png)|![HeatMan](/img/megaman2/heatman.png)|![WoodMan](/img/megaman2/woodman.png)|![MetalMan](/img/megaman2/metalman.jpg)|![FlashMan](/img/megaman2/flashman.png)|![CrashMan](/img/megaman2/crashman.png)|
 
 <br />
 {% highlight ruby %}

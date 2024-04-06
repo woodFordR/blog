@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "A picture sharing app"
+title:  "A rails app to start"
 date:   2023-03-27 04:00:00 -0500
 categories: app rails devise postgres server
 ---
 
-I have decided to create a simple rails app with postgres, css framework 
-tailwindcss, and importmaps. Noteworthy gems in my Gemfile:
+I have decided to start creating simple rails apps with tailwindcss and importmaps.
+Noteworthy gems in my Gemfile:
 
   - `ruby "3.2.1"`
   - `gem "rails", "~> 7.0.4", ">= 7.0.4.3"`
@@ -15,8 +15,6 @@ tailwindcss, and importmaps. Noteworthy gems in my Gemfile:
   - `gem "omniauth-rails_csrf_protection"`
   - `gem "pg", "~> 1.1"`
 
-I'm hoping to have this done by the end of next week since we will be on vacation 
-trying to use it .. 😎.
 
 ---
 

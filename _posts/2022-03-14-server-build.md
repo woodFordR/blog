@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Quick Intro"
+title:  "Server Build"
 date:   2022-03-13 03:00:00 -0500
 categories: intro woodford server rails ruby ubuntu
 ---

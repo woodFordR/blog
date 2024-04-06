@@ -36,11 +36,9 @@ is google.
 
 ### Server Update
 
-I have completed cleaning the computer case and installing all the new hardware I have bargain shopped  
-over the past few months. It is a micro atx case with some damage to one of the two sata harddrive 
-compartments. I decided to cut the metal and smooth out the remaining walls. Below this blurb, you can see 
-spot #1 with a few dents. During the process of removing the old motherboard & cables, I figured out how to 
-rewire the front panel at spot #2. Here are some other spots of interest:
+I started to work on my server again. Below I have uploaded images for reference. 
+During the process of removing the old motherboard & cables, I figured out how to 
+rewire the front panel at spot #2. Here are some other points of interest:
 
 ![capybara-server1](/img/capybara-server1.jpg){: maxwidth="100%" style="padding: 20px 0 20px 0" }
 
